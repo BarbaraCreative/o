@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentin Nap</title>
+  <!-- Google Fonts betöltése -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #ffb6b9, #ff5c8d); /* világosabb rózsaszín átmenet */
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
+    }
+
+    /* Címsor színváltó animációja: fehér - lágy rózsaszín - fehér */
+    @keyframes colorChange {
+      0%   { color: white; }
+      50%  { color: #ffc0cb; } /* lágy rózsaszín */
+      100% { color: white; }
+    }
+
+    h1 {
+      animation: colorChange 3s infinite;
+      font-size: 4em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      font-family: 'Dancing Script', cursive;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-top: 20px;
+      text-align: center;
+      font-weight: normal;
+      line-height: 2;
+      color: #800000; /* sötét vörös szín a szöveghez */
+      background-color: rgba(255, 255, 255, 0.8); /* világosabb áttetsző háttér */
+      padding: 15px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Link stílusok az h2 belsejében */
+    h2 a {
+      color: #800000;  /* a link színe illeszkedik a szöveghez */
+      text-decoration: underline;
+    }
+
+    /* Kép beállítások */
+    img {
+      width: 80%; /* A kép szélessége az oldal szélességéhez igazodik */
+      max-width: 500px; /* Maximális szélesség, hogy ne legyen túl nagy */
+      height: auto; /* Az arányok megőrzéséhez */
+      display: block; /* Blokk elemként jelenik meg */
+      margin: 20px auto; /* Középre igazítja */
+      border-radius: 10px; /* Lekerekített sarkok */
+    }
+
+    /* Rózsaszín háttér a kép alatt */
+    .image-container {
+      background-color: rgba(255, 182, 203, 0.6); /* Rózsaszín háttér */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    blockquote {
+      font-size: 1.2em;
+      margin-top: 30px;
+      font-style: italic;
+      color: white;
+      border-left: 4px solid #ff5c8d;
+      padding-left: 20px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    /* Reszponzív design */
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+        padding: 10px;
+      }
+
+      img {
+        width: 90%;
+      }
+
+      blockquote {
+        font-size: 1em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1em;
+        padding: 8px;
+      }
+
+      img {
+          width: 100%; /* A kép szélessége az oldal teljes szélessége legyen */
+          max-width: 600px; /* A kép maximális szélessége, hogy ne legyen túl nagy */
+          height: auto; /* Az arányokat megőrzi */
+          display: block; /* A kép blokk elemként jelenik meg */
+          margin: 20px auto; /* Középre igazítja */
+      }
+
+      blockquote {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Boldog Valentin Napot, Méhészborzom!</h1>
+
+  <h2>
+    A meglepetésem egy közös kikapcsolódás. :)<br>
+    <a href="benefits.html" target="_blank"><strong>Indiai Fejmasszázs</strong></a><br>
+    <strong>Helyszín:</strong> Central Harmony Masszázs szalon, 1113 Ipoly utca 13.<br>
+    <strong>Időpont:</strong> Február 20. 16:30.
+  </h2>
+
+  <div class="image-container">
+    <img src="img/Pusheen_Love.png" alt="Kép a párkapcsolatról">
+  </div>
+  
+</body>
+</html>
